@@ -651,12 +651,10 @@ def tabs():
                 sn=StockNews(stock_sentiment_ticker,save_news=False)
                 df_news= sn.read_rss()
                 
-                # df_news = sn.top_news(tickers=ticker)
-                # st.write(df_news)
                 if len(df_news) != 0:
                     st.subheader(f'News for the ticker: {stock_sentiment_ticker}')
-                    df_news['published'] = pd.to_datetime(df_news['published']).dt.strftime("%Y-%m-%d %H:%M")
-                    # import pdb;pdb.set_trace()
+                    # df_news['published'] = pd.to_datetime(df_news['published']).dt.strptime("%a, %d %B %Y %H:%M:%S %z")
+                    
                     negative = df_news[df_news['sentiment_summary'] < 0]['sentiment_summary']
                     positive = df_news[df_news['sentiment_summary'] > 0]['sentiment_summary']
                     neutral = df_news[df_news['sentiment_summary'] == 0]['sentiment_summary']
