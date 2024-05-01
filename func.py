@@ -56,6 +56,7 @@ def get_macro_data(country):
         return fig
     
     if country == 'USA':
+        		
         #USA Variables
         usa_gdp = 'GDPA'
         usa_inflation = 'CPIAUCSL'
@@ -199,8 +200,10 @@ def fetch_index_dataa(ticker, period):
     return data
 
 def display_country_index(data, key, title, additional_data=False):
+    
     st.write(f'<div style="text-align: center;"><h3>{title}</h3></div>', unsafe_allow_html=True)
     # index_data = data['Adj Close'] if not additional_data else data[key]['Adj Close']
+    
     index_data = data['Adj Close']
     fig = go.Figure()
     fig.add_trace(go.Scatter(x=index_data.index, y=index_data.values, mode='lines', name=key))
