@@ -1,0 +1,13 @@
+keras
+matplotlib
+numpy
+pandas
+pandas_datareader
+plotly
+prophet
+seaborn
+sklearn
+statsmodels
+streamlit
+xgboost
+yfinance
