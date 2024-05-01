@@ -191,7 +191,11 @@ def color_coded_sentiment(score):
     return f'<span style="color:{color};">{score:.4f}</span>'
 
 def fetch_index_dataa(ticker, period):
-	data = yf.download(ticker, period=period, interval='1mo')
+	try:
+		data = yf.download(ticker, period=period, interval='1mo')
+	except Exception as e:
+		data = e
+	
 	return data
 
 def display_country_index(data, key, title, additional_data=False):
