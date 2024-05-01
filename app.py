@@ -1,5 +1,6 @@
 from func import *
 
+
 st.set_page_config(page_title='Financial Markets and Macro Economic Data',
                    page_icon='🧊',
                    layout="wide")
