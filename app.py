@@ -1,6 +1,8 @@
 from func import *
 
-st.set_page_config(page_title='Financial Markets and Macro Economic Data', page_icon='🧊',layout="wide")
+st.set_page_config(page_title='Financial Markets and Macro Economic Data',
+                   page_icon='🧊',
+                   layout="wide")
 
 def main():
     image = Image.open("banner.jpg")
