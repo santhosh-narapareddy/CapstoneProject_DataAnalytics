@@ -13,7 +13,7 @@ def main():
         
     left, mid, right = st.columns([0.5,3,0.5])
     with mid:
-        data_returned = tabs()
+        tabs()
 
 st.markdown("""
             <div style='text-align: center;'>
