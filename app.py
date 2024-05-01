@@ -6,6 +6,7 @@ st.set_page_config(page_title='Financial Markets and Macro Economic Data',
                    layout="wide")
 
 def main():
+    
     image = Image.open("banner.jpg")
 
     col1, col2, col3 = st.columns([1,2,1])  # The middle column is twice the size of the side columns
@@ -26,6 +27,7 @@ st.markdown("""
 ######################################### Define the tabs ########################################
 
 def tabs():
+    
     tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(["Overview of the App", "Financial Market Indices","Macro-Economic Indicators", "Correlation Matrix - Heatmap", "Machine Learning - Price Forecast ", "Company News and Sentiment Analysis"])
 
 ######################################### Overview Tab ########################################    
@@ -703,7 +705,6 @@ def tabs():
                     #     st.markdown('---')
                 else:
                     st.subheader(f"No Articles found for the ticker: {stock_sentiment_ticker}, Please try with other value.")
-
 
 if __name__ == '__main__':
     main()
