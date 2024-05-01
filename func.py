@@ -34,7 +34,6 @@ import plotly.express as px
 from plotly.subplots import make_subplots
 import matplotlib.pyplot as plt
 
-
 def get_macro_data(country):
     # Start and end date to download max available data
     start_date = datetime.datetime(1900, 1, 1)
