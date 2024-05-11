@@ -1,4 +1,4 @@
-## Financial Market Versus Macro Economic Indicator of USA, Canada, India
+## Financial Markets and Macro Economic Indicator of USA, Canada, India
 
 ### Description
 This project comprises a web-based dashboard designed to provide comprehensive financial indices and macroeconomic data analysis using Python. 
