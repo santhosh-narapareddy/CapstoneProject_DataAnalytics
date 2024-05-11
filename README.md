@@ -12,7 +12,7 @@ pip install -r requirements.txt
 ### Usage
 To start the application, run the following command in your terminal:
 ```
-streamlit run Streamlit_Capstone_v1.py
+streamlit run app.py
 ```
 This will start a web server and open the dashboard in your default web browser.
 
